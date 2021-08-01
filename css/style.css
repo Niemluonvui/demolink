@@ -1,0 +1,520 @@
+/*Header css*/
+#top{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+}
+header{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+}
+.logo{
+    height: 70%;
+    width: 70px;
+    filter: invert(0) brightness(1);
+}
+.topelement{
+    font-family: 'Hahmlet', serif;
+    text-decoration: none;
+    font-size: 35px;
+    transition: color 0.5s ease-in-out;
+    color: #100c07;
+}
+ul li{
+    list-style-type: none;
+}
+ul li:hover a{
+    filter: invert(0.1);
+}
+ul li:hover{
+    transition: all 0.25s ease-in-out;
+    font-size: 27px;
+}
+ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+}
+ul li ul li div{
+    display: flex;
+    align-items: center;
+}
+ul li ul li div div{
+    display: flex;
+    align-items: center;
+    padding: 13px;
+    margin: 0px 0 0 10px;
+    font-size: 25px;
+    color: #F8F8FF;
+    cursor: pointer;
+}
+ul li ul li a{
+    display: flex;
+    align-items: center;
+}
+ul li ul li a div{
+    display: flex;
+    align-items: center;
+    padding: 13px;
+    margin: 0px 0 0 10px;
+    font-size: 25px;
+    color: #F8F8FF;
+}
+.more{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    width: 250px;
+    background-color: #3E3B39;
+    position: absolute;
+    visibility: hidden;
+    top: 95%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    border-radius: 20px;
+    padding: 0 20px 0 20px;
+}
+.part{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    margin: 10px 10px 0 10px;
+}
+/*Body css*/
+a{
+    text-decoration: none;
+}
+main{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: auto;
+}
+/*content 1 css*/
+.content{
+    position: relative;
+    background-image: url(../pics/background3.jpg); /* your first background */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20%;
+    padding-bottom: 5%;
+}
+h1{
+    font-size: 50px;
+    margin: 0 0 5% 0;
+}
+h2{
+    font-size: 30px;
+}
+h2:nth-child(2){
+    margin-bottom: 5px;
+}
+.classpics{
+    width: 70%;
+    padding: 5%;
+    margin-bottom: 5%;
+    border-radius: 80px;
+}
+/*content 2 css*/
+.content2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 10%;
+}
+.overflow{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    width: 90%;
+    height: 40%;
+    margin-top: 10px;
+}
+.post-box{
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.post-container{
+    background-color: #CAC9CD;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 400px;
+}
+.post-thumb{
+    margin-top: 5%;
+    border-radius: 20px;
+    height: 50%;
+    width: 90%;
+    transition: all 0.4s ease-in-out;
+}
+.post-thumb:hover{
+    width: 100%;
+    height: 60%;
+    margin-top: 0;
+}
+/*content 3 css*/
+.content3{
+    display: flex;
+    justify-content: space-evenly;
+    height: 600px;
+    width: 100%;
+    padding: 10%;
+}
+.info-pic{
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+}
+.info{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+p{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/*content 4 css*/
+.content4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 500px;
+    margin-bottom: 20%;
+}
+.certi-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 45%;
+}
+.certi-frame{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+/*content 5 css*/
+.content5{
+    margin-bottom: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*video-part*/
+.video-box{
+    width: 100%;
+    display: flex;
+}
+.videos{
+    width: 100%;
+    border-radius: 10px;
+}
+.video-box2{
+    width: 25%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.video-thumb{
+    height: 32%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../pics/videos/thum1.jpg);
+    transition: ease-in-out all 0.5s;
+}
+.video-thumb:nth-child(2){
+    background-image: url(../pics/videos/thumb2.jpg);
+}
+.video-thumb:nth-child(3){
+    background-image: url(../pics/videos/LNDCTfn.png);
+}
+.video-thumb:hover{
+    filter: brightness(120%);
+}
+.video-thumb img{
+    transform: scale(0.5);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.video-thumb:hover img{
+    opacity: 1;
+}
+/*content 6 css*/
+.content6{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
+}
+/*dot*/
+.dot{
+    display: inline-block;
+    cursor: pointer;
+    height: 15px;
+    margin: 10px 2px 10px 0;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 100%;
+    transition: background-color 0.6s ease;
+}
+.active,.dot:hover{
+    background-color: #717171;
+}
+/*frames_stuffs*/
+.frames{
+    width: 25%;
+    height: 420px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    transition: all 1s ease-in-out;
+    border-radius: 10px;
+}
+.frames:nth-child(1){
+    background-image: url(../pics/groups/photoshopcourse.png);
+}
+.frames:nth-child(2){
+    background-image: url(../pics/groups/photoshopcourse_2.png);
+}
+.frames:nth-child(3){
+    background-image: url(../pics/groups/photoshopcourse_3.png);
+}
+#container_block{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 1s ease-in-out;
+}
+.current{
+    height: 450px;
+}
+.grouppic_container{
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.gr_pic{
+    width: 25%;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #CAC9CD;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.gr_pic:hover{
+    height: 45px;
+}
+/*more-box css*/
+.more-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CAC9CD;
+    height: 50px;
+    width: 20%;
+    border-radius: 30px;
+    font-size: 30px;
+    margin: 10px;
+    color: black;
+}
+.more-box:hover{
+    filter: invert(1);
+    transition: all 0.6s ease-in-out;
+}
+/*box shadow*/
+.box-shadow{
+    box-shadow: 3px 3px 5px 2px #6D6A6A;
+}
+/*footer css*/
+footer{
+    position: absolute;
+    background-color: #100c07;
+    height: 200px;
+    width: 100%;
+    top: 660%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+}
+.box-flex{
+    display: flex;
+}
+.text-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.text-line{
+    display: flex;
+    justify-content: space-evenly;
+}
+.text{
+    padding: 0;
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    margin: 10px;
+    transition: all 0.6s ease-in-out;
+}
+.link-map{
+    margin: 10px 10px;
+    color: #F8F8FF;
+    transition: all 0.6s ease-in-out;
+}
+.link-map:hover{
+    color: aqua;
+}
+hr{
+    color: white;
+    width: 100%;
+}
+.link-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.link-container a:hover{
+    color: aqua;
+}
+.ct-certifite{
+    height: 70px;
+    width: height * 263;
+}
+.contact-line{
+    display: flex;
+}
+.logo-contact{
+    height: 25px;
+    width: 25px;
+    filter: invert(2) brightness(1);
+    margin: 7px;
+}
+.ho:hover{
+    color: black;
+    font-weight: bold;
+}
+/*css for course page*/
+.course-main{
+    background-image: url(../pics/background3.jpg); /* your first background */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 0 5% 0;
+    height: 350%;
+}
+.title-page{
+    margin-top: 13%;
+    font-size: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.course_container{
+    height: 20%;
+    width: 70%;
+    margin: 10% 0 0 0;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    background-color: #dfdfdf;
+    padding-top: 5%;
+}
+.course_title{
+    margin: 0;
+}
+.course_wrapper_bigger{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 60%;
+    padding: 1%;
+}
+.course_wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+.course_content{
+    position: relative;
+    transition: ease-in-out 1s all;
+}
+.course_img{
+    border-radius: 10px;
+    height: 450px;
+}
+.course_content:hover{
+    transform: scale(1.05);
+}
+.course_data{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #F8F8FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    border-radius: 10px;
+    color: #100c07;
+    opacity: 0;
+    transition: ease-in-out 1s all;
+}
+.course_content:hover .course_data{
+    opacity: 1;
+}
+.course_data p{
+    font-size: 20px;
+    margin: 0;
+}
